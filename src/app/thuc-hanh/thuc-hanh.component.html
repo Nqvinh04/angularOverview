@@ -1,0 +1,20 @@
+<p>thuc-hanh works!</p>
+
+<h2>Font size editor</h2>
+
+<div>
+  <label>Enter font size (px): </label>
+  <input [(ngModel)]="fontSize" type = "range" min="9" max="72" value="18">
+
+  <p [style.fontSize.px]="fontSize" class="output">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi cumque nostrum quibusdam.
+    Inventore quibusdam debitis, tempore error voluptatem explicabo ipsum?
+  </p>
+</div>
+
+<div>
+  <h2>Nhập tên</h2>
+  <input type="text" [(ngModel)]= "name">
+
+  <p>{{name}}</p>
+</div>
